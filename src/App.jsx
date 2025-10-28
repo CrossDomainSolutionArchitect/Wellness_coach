@@ -11,7 +11,7 @@ const App = () => {
   const [currentPage, setCurrentPage] = useState('home');
 
   return (
-    <div className="min-h-screen bg-white">
+    <div style={{ minHeight: '100vh', backgroundColor: '#ffffff' }}>
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {currentPage === 'home' && <HomePage setCurrentPage={setCurrentPage} />}
       {currentPage === 'about' && <AboutPage />}
